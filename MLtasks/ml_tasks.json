@@ -1,5 +1,5 @@
 {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "prompt_language": "en",
     "interface_protocols": {
         "pytorch_task_v1": {
@@ -93,6 +93,32 @@
             }
         },
         {
+            "series": "Linear Regression",
+            "level": 5,
+            "id": "Hw1Task1EthanVu",
+            "algorithm": "Linear Regression (UCI Concrete Slump)",
+            "description": "Linear regression on UCI Concrete Slump Test dataset using Adam optimizer and early stopping.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Download UCI Concrete Slump Test data.",
+                "implementation": "Implement linear regression with Adam, early stopping.",
+                "validation": "R2 > 0.8 on validation."
+            }
+        },
+        {
+            "series": "Linear Regression",
+            "level": 6,
+            "id": "Hw1Task2EthanVu",
+            "algorithm": "Linear Regression (UCI Wine Quality)",
+            "description": "Linear regression on UCI Wine Quality dataset using SGD with momentum and StepLR scheduler.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Download UCI Wine Quality data.",
+                "implementation": "Use SGD+momentum, StepLR scheduler.",
+                "validation": "R2 > 0.7 on validation."
+            }
+        },
+        {
             "series": "Logistic Regression",
             "level": 1,
             "id": "logreg_lvl1_binary_raw",
@@ -148,6 +174,32 @@
                 "implementation": "Compute ECE (Expected Calibration Error) manually; optimize threshold for F1.",
                 "visualization": "Reliability diagram + ROC curve.",
                 "validation": "ECE decreases after calibration step (compare before/after)."
+            }
+        },
+        {
+            "series": "Logistic Regression",
+            "level": 5,
+            "id": "Hw1Task3EthanVu",
+            "algorithm": "Logistic Regression (UCI WDBC)",
+            "description": "Logistic regression on UCI Breast Cancer Wisconsin Diagnostic dataset using pos_weight and threshold tuning for F1.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Download UCI WDBC data.",
+                "implementation": "Use pos_weight for imbalanced, tune threshold for F1.",
+                "validation": "F1 > 0.95 on validation."
+            }
+        },
+        {
+            "series": "Logistic Regression",
+            "level": 6,
+            "id": "Hw1Task4EthanVu",
+            "algorithm": "Logistic Regression (UCI Banknote)",
+            "description": "Logistic regression on UCI Banknote Authentication dataset using LBFGS optimizer and L2 penalty.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Download UCI Banknote data.",
+                "implementation": "Use LBFGS, L2 penalty.",
+                "validation": "Accuracy > 0.98 on validation."
             }
         },
         {
