@@ -1,0 +1,7 @@
+{
+  "task_id": "logreg_bigquery_chicago_taxi_simple",
+  "dataset": "bigquery-public-data.chicago_taxi_trips.taxi_trips",
+  "target": "tipped_anything",
+  "model": "PyTorch Logistic Regression",
+  "description": "Predict whether a taxi trip received a tip using BigQuery data."
+}

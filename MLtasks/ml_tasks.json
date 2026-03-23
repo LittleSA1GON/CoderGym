@@ -119,6 +119,21 @@
             }
         },
         {
+            "series": "Linear Regression",
+            "level": 7,
+            "id": "Hw1ExcellentTask1EthanVu",
+            "algorithm": "Linear Regression (BigQuery Austin Bikeshare, PyTorch)",
+            "description": "Load Austin Bikeshare trip data from Google BigQuery and predict duration_minutes using a beginner-friendly PyTorch linear regression model.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Load data from bigquery-public-data.austin_bikeshare.bikeshare_trips using the BigQuery Python client.",
+                "implementation": "Single self-contained task.py in PyTorch. Use simple numeric features such as start_hour and day_of_week.",
+                "evaluation": "Compute and print train/validation regression results, including at least MSE and R2.",
+                "main_block": "Train the model, evaluate on validation data, save artifacts, and call sys.exit(exit_code).",
+                "output": "Return loss history, validation metrics, and saved model artifacts."
+            }
+        },
+        {
             "series": "Logistic Regression",
             "level": 1,
             "id": "logreg_lvl1_binary_raw",
@@ -200,6 +215,21 @@
                 "data": "Download UCI Banknote data.",
                 "implementation": "Use LBFGS, L2 penalty.",
                 "validation": "Accuracy > 0.98 on validation."
+            }
+        },
+        {
+            "series": "Logistic Regression",
+            "level": 7,
+            "id": "Hw1ExcellentTask2EthanVu",
+            "algorithm": "Logistic Regression (BigQuery Chicago Taxi Trips, PyTorch)",
+            "description": "Load Chicago Taxi Trips data from Google BigQuery and predict whether a trip received any tip using a beginner-friendly PyTorch logistic regression model.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Load data from bigquery-public-data.chicago_taxi_trips.taxi_trips using the BigQuery Python client.",
+                "implementation": "Single self-contained task.py in PyTorch. Create a binary label in SQL with IF(tips > 0, 1, 0). Use simple numeric features such as trip_miles and fare.",
+                "evaluation": "Compute and print train/validation classification results, including at least accuracy and F1.",
+                "main_block": "Train the model, evaluate on validation data, save artifacts, and call sys.exit(exit_code).",
+                "output": "Return loss history, validation metrics, and saved model artifacts."
             }
         },
         {

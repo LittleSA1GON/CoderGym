@@ -1,0 +1,14 @@
+{
+  "feature_cols": [
+    "trip_miles",
+    "fare"
+  ],
+  "mean": {
+    "trip_miles": 4.26225,
+    "fare": 13.86286875
+  },
+  "std": {
+    "trip_miles": 5.670741759374402,
+    "fare": 15.40494100877082
+  }
+}

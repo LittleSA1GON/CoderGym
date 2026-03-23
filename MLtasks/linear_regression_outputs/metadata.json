@@ -1,0 +1,7 @@
+{
+  "task_id": "linreg_bigquery_austin_bikeshare_simple",
+  "dataset": "bigquery-public-data.austin_bikeshare.bikeshare_trips",
+  "target": "duration_minutes",
+  "model": "PyTorch Linear Regression",
+  "description": "Predict trip duration using simple numeric features from BigQuery."
+}
