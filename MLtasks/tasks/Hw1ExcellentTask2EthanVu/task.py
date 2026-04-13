@@ -1,5 +1,5 @@
 """
-Beginner-friendly PyTorch Logistic Regression task using Google BigQuery.
+PyTorch Logistic Regression task using Google BigQuery.
 
 What this script does:
 1. Connects to BigQuery
@@ -141,19 +141,12 @@ def train_model(model, X_train, y_train):
     history = []
 
     for epoch in range(EPOCHS):
-        # Forward pass
         logits = model(X_train)
-
-        # Compute binary classification loss
         loss = loss_fn(logits, y_train)
-
-        # Backpropagation
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
         history.append(float(loss.item()))
-
         if (epoch + 1) % 20 == 0:
             print(f"Epoch {epoch+1}/{EPOCHS}, Train Loss: {loss.item():.4f}")
 

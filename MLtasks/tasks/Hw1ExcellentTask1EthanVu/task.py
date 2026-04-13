@@ -1,5 +1,5 @@
 """
-Beginner-friendly PyTorch Linear Regression task using Google BigQuery.
+PyTorch Linear Regression task using Google BigQuery.
 
 What this script does:
 1. Connects to BigQuery
