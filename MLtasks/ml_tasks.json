@@ -653,6 +653,38 @@
             }
         },
         {
+            "series": "Neural Networks (MLP)",
+            "level": 5,
+            "id": "Hw2Task1EthanVu",
+            "algorithm": "MLP (Optimizer Comparison)",
+            "description": "Train the same neural network with SGD, Adam, and RMSprop on a nonlinear classification task and compare validation accuracy.",
+            "interface_protocol": "pytorch_task_v1"
+        },
+        {
+            "series": "Neural Networks (MLP)",
+            "level": 6,
+            "id": "Hw2Task2EthanVu",
+            "algorithm": "MLP (Feature Engineering)",
+            "description": "Compare an MLP trained on raw features versus engineered nonlinear features on a synthetic tabular classification task.",
+            "interface_protocol": "pytorch_task_v1"
+        },
+        {
+            "series": "Neural Networks (MLP)",
+            "level": 7,
+            "id": "Hw2Task3EthanVu",
+            "algorithm": "MLP (Label Smoothing)",
+            "description": "Train a multiclass neural network with and without label smoothing and compare validation accuracy and loss.",
+            "interface_protocol": "pytorch_task_v1"
+        },
+        {
+            "series": "Neural Networks (MLP)",
+            "level": 8,
+            "id": "Hw2Task4EthanVu",
+            "algorithm": "MLP (Early Stopping)",
+            "description": "Train a deeper neural network with early stopping and verify that the best validation checkpoint is recovered correctly.",
+            "interface_protocol": "pytorch_task_v1"
+        },
+        {
             "series": "Convolutional Neural Networks",
             "level": 1,
             "id": "cnn_lvl1_from_scratch_conv",
