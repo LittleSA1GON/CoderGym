@@ -685,6 +685,36 @@
             "interface_protocol": "pytorch_task_v1"
         },
         {
+            "series": "Neural Networks (MLP)",
+            "level": 9,
+            "id": "Hw2ExcellentTask1EthanVu",
+            "algorithm": "MLP Multiclass Classification (BigQuery CFPB Complaints, PyTorch)",
+            "description": "Load Consumer Financial Protection Bureau complaints data from Google BigQuery and predict the product category using a PyTorch neural network classifier.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Load data from bigquery-public-data.cfpb_complaints.complaint_database using the BigQuery Python client. Filter for Mortgage, Credit card, Checking or savings account, and Student loan products with narrative length between 80-2500 characters.",
+                "implementation": "Single self-contained task.py in PyTorch. Use a simple MLP classifier with embedding layers for text features.",
+                "evaluation": "Compute and print train/validation classification results, including at least accuracy, macro F1, and per-class metrics.",
+                "main_block": "Train the model, evaluate on validation data, save artifacts, and call sys.exit(exit_code). Assert accuracy >= 0.68 and macro F1 >= 0.66.",
+                "output": "Return loss history, validation metrics, and saved model artifacts."
+            }
+        },
+        {
+            "series": "Neural Networks (MLP)",
+            "level": 10,
+            "id": "Hw2ExcellentTask2EthanVu",
+            "algorithm": "MLP Binary Classification (BigQuery StackOverflow, PyTorch)",
+            "description": "Load StackOverflow posts data from Google BigQuery and predict whether a Python question has an accepted answer using a PyTorch neural network classifier.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Load data from bigquery-public-data.stackoverflow.posts_questions using the BigQuery Python client. Filter for posts with 'python' tag, creation date >= 2018-01-01, and body text length between 120-2000 characters.",
+                "implementation": "Single self-contained task.py in PyTorch. Use a simple MLP classifier with text features from title and body.",
+                "evaluation": "Compute and print train/validation classification results, including at least accuracy and F1 score.",
+                "main_block": "Train the model, evaluate on validation data, save artifacts, and call sys.exit(exit_code). Assert accuracy >= 0.62 and F1 >= 0.62.",
+                "output": "Return loss history, validation metrics, and saved model artifacts."
+            }
+        },
+        {
             "series": "Convolutional Neural Networks",
             "level": 1,
             "id": "cnn_lvl1_from_scratch_conv",

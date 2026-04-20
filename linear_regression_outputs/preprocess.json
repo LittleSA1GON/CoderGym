@@ -1,0 +1,14 @@
+{
+  "feature_cols": [
+    "start_hour",
+    "day_of_week"
+  ],
+  "mean": {
+    "start_hour": 14.227125,
+    "day_of_week": 4.09675
+  },
+  "std": {
+    "start_hour": 4.934225628930506,
+    "day_of_week": 2.094561490140477
+  }
+}
